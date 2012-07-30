@@ -1,3 +1,5 @@
-= Meeting
+= Meeting gem
 
 This project rocks and uses MIT-LICENSE.
+
+Meeting listing gem, build as engine. 
