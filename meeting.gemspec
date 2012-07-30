@@ -4,7 +4,7 @@ require File.expand_path("../lib/meeting/version", __FILE__)
 # Provide a simple gemspec so that you can easily use your
 # Enginex project in your Rails apps through Git.
 Gem::Specification.new do |s|
-  s.name                      = "meetmero_meeting"
+  s.name                      = "meetmer_meeting"
   s.version                   = Meeting::VERSION
   s.platform                  = Gem::Platform::RUBY
   s.authors                   = [ "Jarkko Moilanen" ]
