@@ -19,8 +19,9 @@ Gem::Specification.new do |s|
   s.add_dependency "activesupport" , ">= 3.0.7"
   s.add_dependency "rails"         , ">= 3.0.7"
 
-  s.files = `git ls-files`.split("\n")
+#  s.files = `git ls-files`.split("\n")
+  s.files = Dir["{app,config,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.executables = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
-  s.require_path = 'assests'
+  s.require_path = 'assets'
 end
