@@ -1,6 +1,6 @@
 # CURRENT FILE :: lib/generators/meeting/templates/migration.rb
 
-class CreateMeetings < ActiveRecord::Migration
+class Meetings < ActiveRecord::Migration
   def self.up
     create_table :meetings do |t|
       t.string :title
