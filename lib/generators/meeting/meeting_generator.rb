@@ -28,8 +28,17 @@ class MeetingGenerator < Rails::Generators::Base
    # copy model
     copy_file '../../../../app/models/meeting/meeting.rb',
     'app/models/meeting/meeting.rb'
+   # copy view files
+    copy_file '../../../../app/views/meeting/index.html.haml', 
+    'app/views/meeting/index.html.haml'
+    copy_file '../../../../app/views/meeting/_accordion.html.haml',
+    'app/views/meeting/_accordionhtml.haml'
+    copy_file '../../../../app/views/meeting/show.html.haml',
+    'app/views/meeting/show.html.haml'
+    copy_file '../../../../app/views/meeting/_form.html.haml',
+    'app/views/meeting/_form.html.haml'
+    copy_file '../../../../app/views/meeting/edit.html.haml',
+    'app/views/meeting/edit.html.haml'
 
-    copy_file '../../../../app/views/meeting/*', 
-    'app/views/meeting/'
   end
 end
