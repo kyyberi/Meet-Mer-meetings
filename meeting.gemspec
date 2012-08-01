@@ -21,9 +21,9 @@ Gem::Specification.new do |s|
   s.add_dependency "haml"
   
 
-#  s.files = `git ls-files`.split("\n")
-  s.files = Dir["{app,config,lib}/**/**/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.executables = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
+
+   s.files = Dir.glob("{app,config,lib}/**/**/**/*") + ("MIT-LICENSE", "Rakefile", "README.rdoc")
+#  s.executables = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
 #  s.require_path = 'lib'
 #  s.require_paths << 'app'
 end
