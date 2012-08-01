@@ -22,7 +22,11 @@ class MeetingGenerator < Rails::Generators::Base
   end
 
   def copy_assets 
+   # Copy stylesheet
     copy_file '../../../../app/assets/stylesheets/meeting.css', 
-    'public/stylesheets/meeting.css' 
+    'app/assests/stylesheets/meeting.css' 
+   # copy model
+    copy_file '../../../../app/models/meeting/meeting.rb',
+    'app/models/meeting/meeting.rb'
   end
 end
