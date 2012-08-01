@@ -28,5 +28,8 @@ class MeetingGenerator < Rails::Generators::Base
    # copy model
     copy_file '../../../../app/models/meeting/meeting.rb',
     'app/models/meeting/meeting.rb'
+
+    copy_file '../../../../app/views/meeting/*', 
+    'app/views/meeting/'
   end
 end
