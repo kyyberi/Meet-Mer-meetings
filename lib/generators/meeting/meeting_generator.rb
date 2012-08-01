@@ -39,6 +39,12 @@ class MeetingGenerator < Rails::Generators::Base
     'app/views/meeting/_form.html.haml'
     copy_file '../../../../app/views/meeting/edit.html.haml',
     'app/views/meeting/edit.html.haml'
-
+   # copy controller
+    copy_file '../../../../app/controllers/meeting_controller.rb',
+    'app/controllers/meeting_controller.rb'
+   # copy routes file. Keep in mind that in main app all route files in folder config/routes are 
+   # concatenated to one. Copy this routes.rb as meeting_routes.rb
+    copy_file '../../../../config/routes.rb',
+    'config/routes/meeting_routes.rb'
   end
 end
