@@ -32,7 +32,7 @@ class MeetingGenerator < Rails::Generators::Base
     copy_file '../../../../app/views/meeting/index.html.haml', 
     'app/views/meeting/index.html.haml'
     copy_file '../../../../app/views/meeting/_accordion.html.haml',
-    'app/views/meeting/_accordionhtml.haml'
+    'app/views/meeting/_accordion.html.haml'
     copy_file '../../../../app/views/meeting/show.html.haml',
     'app/views/meeting/show.html.haml'
     copy_file '../../../../app/views/meeting/_form.html.haml',
