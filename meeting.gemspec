@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
   
 
 
-   s.files = Dir.glob("{app,config,lib}/**/**/**/*") 
+  s.files = Dir.glob("{app,config,lib}/**/**/**/*") 
   s.executables = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
-#  s.require_path = 'lib'
-#  s.require_paths << 'app'
+# s.require_path = 'lib'
+# s.require_paths << 'app'
 end
