@@ -19,8 +19,10 @@
 #############################################################################
 
 # Requires
+
 require 'rails/generators'
 require 'rails/generators/migration'
+module Meeting
 class MeetingGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 #  source_root File.expand_path('../templates', __FILE__)
@@ -81,4 +83,5 @@ class MeetingGenerator < Rails::Generators::Base
 #          'app/assets/'
 #    end
 
+end
 end
