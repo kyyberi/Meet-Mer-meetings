@@ -24,7 +24,7 @@ require 'rails/generators'
 require 'rails/generators/migration'
 module Meeting
 module Generators
-class MeetingGenerator < Rails::Generators::Base
+class InstallGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 #  source_root File.expand_path('../templates', __FILE__)
   def self.source_root
