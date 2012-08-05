@@ -1,4 +1,4 @@
-# CURRENT FILE :: lib/meeting/version.rb
+# CURRENT FILE :: app/models/meeting/meeting.rb
 ############################################################################# 
 # Copyright (C) 2012  Jarkko Moilanen 
 #
@@ -19,5 +19,7 @@
 #############################################################################
 
 module Meeting
-  VERSION = "0.1.5"
+  class Meeting < ActiveRecord::Base
+    
+  end
 end

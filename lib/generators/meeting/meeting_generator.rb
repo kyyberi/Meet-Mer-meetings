@@ -23,10 +23,12 @@ require 'rails/generators'
 require 'rails/generators/migration'
 class MeetingGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
-  source_root File.expand_path('../templates', __FILE__)
-#  def self.source_root
-#    @source_root ||= File.join(File.dirname(__FILE__), 'templates')
-#  end
+#  source_root File.expand_path('../templates', __FILE__)
+  def self.source_root
+   # @source_root ||= File.join(File.dirname(__FILE__), 'templates')
+	@source_root ||= File.expand_path("../templates", __FILE__)
+
+  end
 
   def self.next_migration_number(dirname)
     if ActiveRecord::Base.timestamped_migrations
