@@ -40,7 +40,7 @@ class MeetingGenerator < Rails::Generators::Base
 
   def create_model_file
     template "meeting.rb", "app/models/meeting.rb"
-    migration_template "migration.rb", "db/migrate/meetings.rb"
+    migration_template "create_meetings.rb", "db/migrate/create_meetings.rb"
   end
 
 #    def create_migration_file
